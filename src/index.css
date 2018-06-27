@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.card--asana__breath, .card--asana__breath--full, .card--asana__count {
+    font-size:1.6em;
+}
+
+.card--asana__breath--full{
+    text-align: center;
+}
+
+
+.card--asana__details {
+    margin-top: 2em;
+}
+
+.card--asana__breath__icon.card--asana__breath__icon{
+    display: block;
+}
