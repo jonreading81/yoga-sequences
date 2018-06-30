@@ -4,19 +4,25 @@ body {
   font-family: sans-serif;
 }
 
-.card--asana__breath, .card--asana__breath--full, .card--asana__count {
+.asana__breath, .asana__breath--full, .asana__count {
     font-size:1.6em;
 }
 
-.card--asana__breath--full{
+.asana__breath--full{
     text-align: center;
 }
 
 
-.card--asana__details {
-    margin-top: 2em;
+.asana {
+    margin-top: 4em;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-.card--asana__breath__icon.card--asana__breath__icon{
+.glyphicon.asana__breath__icon{
     display: block;
 }

@@ -3,6 +3,7 @@ import {Nav, Navbar, NavDropdown, MenuItem} from 'react-bootstrap';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { LinkContainer } from 'react-router-bootstrap';
 import NeckAndShoulderTheraphy from './components/NeckAndShoulderTheraphy';
+import UpperBackAndShoulders from './components/practice/UpperBackAndShoulders';
 import Home from './components/Home';
 import './App.css';
 
@@ -18,11 +19,11 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
-            <NavDropdown eventKey={1} title="Sequences" id="basic-nav-dropdown">
+            <NavDropdown eventKey={1} title="Practices" id="basic-nav-dropdown">
               <LinkContainer to="/neck-and-shoulder-theraphy">
                   <MenuItem eventKey={1.1}>Neck and Shoulder theraphy</MenuItem>
               </LinkContainer>
-              <LinkContainer to="/upper-back">
+              <LinkContainer to="/upper-back-and-shoulders">
                   <MenuItem eventKey={1.2}>Upper back and shoulders</MenuItem>
               </LinkContainer>
             </NavDropdown>
@@ -31,6 +32,7 @@ class App extends Component {
           <div className="container">
               <Route exact path="/" component={Home} />
               <Route path="/neck-and-shoulder-theraphy" component={NeckAndShoulderTheraphy} />
+              <Route path="/upper-back-and-shoulders" component={ UpperBackAndShoulders} />
           </div>
       </div>
     </Router>
