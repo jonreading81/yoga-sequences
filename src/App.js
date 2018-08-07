@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { LinkContainer } from 'react-router-bootstrap';
 import NeckAndShoulderTheraphy from './components/NeckAndShoulderTheraphy';
 import UpperBackAndShoulders from './components/practice/UpperBackAndShoulders';
+import Amy_07_08_2018 from './components/practice/Amy_07_08_2018';
 import Home from './components/Home';
 import './App.css';
 
@@ -26,6 +27,9 @@ class App extends Component {
               <LinkContainer to="/upper-back-and-shoulders">
                   <MenuItem eventKey={1.2}>Upper back and shoulders</MenuItem>
               </LinkContainer>
+              <LinkContainer to="/amy-07-08-2018">
+                  <MenuItem eventKey={1.2}>Amy 07/08/2018</MenuItem>
+              </LinkContainer>
             </NavDropdown>
           </Nav>
         </Navbar>
@@ -33,6 +37,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/neck-and-shoulder-theraphy" component={NeckAndShoulderTheraphy} />
               <Route path="/upper-back-and-shoulders" component={ UpperBackAndShoulders} />
+               <Route path="/amy-07-08-2018" component={ Amy_07_08_2018 } />
           </div>
       </div>
     </Router>
