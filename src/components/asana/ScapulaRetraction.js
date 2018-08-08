@@ -15,7 +15,7 @@ class ScapulaRetraction extends Component {
     }
 
     static defaultProps = {
-        description: "Mobilise scapula, bring awarness to mid traps and romboids",
+        description: "Mobilise scapula, bringing awarness to scapula and mid back",
         repetition: "8",
         elementId: 'scapula-retraction',
     };
@@ -38,7 +38,6 @@ class ScapulaRetraction extends Component {
             <div id={elementId} className="asana asana--chakravakasana">
                 <h3>Scapula Retraction</h3>
                 <p>{description}</p>
-                <div className="container">
                     <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
@@ -55,7 +54,6 @@ class ScapulaRetraction extends Component {
                                 <Count repetition={repetition} stay={stay} />
                             </div>
                         </div>
-                    </div>
                 </div>
                 {children}
             </div>

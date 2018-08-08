@@ -39,7 +39,6 @@ class LateralArmRaises extends Component {
             <div id={elementId} className="asana asana--lateral-arm-raise">
                 <h3>Lateral Arm Raises</h3>
                 <p>{description}</p>
-                <div className="container">
                     <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
@@ -56,7 +55,6 @@ class LateralArmRaises extends Component {
                                 <Count repetition={repetition} stay={stay} />
                             </div>
                         </div>
-                    </div>
                 </div>
                 {children}
             </div>

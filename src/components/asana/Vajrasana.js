@@ -36,7 +36,6 @@ class Vajrasana extends Component {
             <div id={elementId} className="asana asana--vajrasana">
                 <h3>Vajrasana</h3>
                 <p>{description}</p>
-                <div className="container">
                     <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
@@ -53,7 +52,6 @@ class Vajrasana extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
                 {children}
             </div>
         )

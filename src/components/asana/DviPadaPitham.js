@@ -16,7 +16,8 @@ class DviPadaPitham extends Component {
 
     static defaultProps = {
         description: "Stretch shoulders and chest, bringing awarness to spine",
-        repetition: "6/4",
+        repetition: "6",
+        stay: "4",
         elementId: 'dvi-pada-pitham',
     };
 
@@ -39,7 +40,6 @@ class DviPadaPitham extends Component {
             <div id={elementId} className="asana asana--dvipadapitham">
                 <h3>Dvi Pada Pitham</h3>
                 <p>{description}</p>
-                <div className="container">
                     <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
@@ -56,7 +56,6 @@ class DviPadaPitham extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
                 {children}
             </div>
         )

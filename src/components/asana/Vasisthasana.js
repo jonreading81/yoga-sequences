@@ -1,11 +1,9 @@
 import React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import SVGPositionA from '../../assets/svg/thread-the-needle.svg';
-import SVGPositionB from '../../assets/svg/thread-the-needle-b.svg';
-import ExIn from './breath/ExIn';
+import SVGPositionA from '../../assets/svg/vasisthasana-01.svg';
 import Count from './Count';
 
-class ThreadTheNeedle extends Component {
+class Vasisthasana extends Component {
 
     static propTypes = {
         description: PropTypes.string,
@@ -15,10 +13,9 @@ class ThreadTheNeedle extends Component {
     }
 
     static defaultProps = {
-        description: "Stretch shoulders and thoracic spine",
-        repetition: "4",
-        stay: "4",
-        elementId: 'thread-the-needle',
+        description: "Strenghten lateral torso and abductors",
+        stay: "10",
+        elementId: 'vasisthasana',
     };
 
     getDefaultChildren() {
@@ -31,19 +28,13 @@ class ThreadTheNeedle extends Component {
         const children = this.props.children ? this.props.children : this.getDefaultChildren();
         const {description, repetition, stay, elementId} = this.props;
         return (
-            <div id={elementId} className="asana asana--thread-needle">
-                <h3>Thread the needle</h3>
+            <div id={elementId} className="asana asana--vasisthasana">
+                <h3>Vasisthasana</h3>
                 <p>{description}</p>
                     <div className="row">
                         <div class="asana__instructions">
-                            <div className="col-sm-4">
-                              <img src={SVGPositionA}  alt="Thread the needle start"/>
-                            </div>
-                            <div className="col-sm-1">
-                                <ExIn />
-                            </div>
-                            <div className="col-sm-4">
-                              <img src={SVGPositionB} alt="Thread the needle  end"/>
+                            <div className="col-sm-9">
+                              <img src={SVGPositionA}  alt="Vasisthasana"/>
                             </div>
                             <div className="col-sm-3">
                                 <Count repetition={repetition} stay={stay} />
@@ -55,4 +46,4 @@ class ThreadTheNeedle extends Component {
         )
     }
 }
-export default ThreadTheNeedle ;
+export default Vasisthasana ;

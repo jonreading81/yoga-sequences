@@ -1,11 +1,11 @@
 import React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import SVGPositionA from '../../assets/svg/jathara-parvritti-a-01.svg';
-import SVGPositionB from '../../assets/svg/jathara-parvritti-b-01.svg';
+import SVGPositionA from '../../assets/svg/pascimatanasana-a-01.svg';
+import SVGPositionB from '../../assets/svg/pascimatanasana-b-01.svg';
 import ExIn from './breath/ExIn';
 import Count from './Count';
 
-class JatharaParvritti extends Component {
+class Pascimatanasana extends Component {
 
     static propTypes = {
         description: PropTypes.string,
@@ -15,17 +15,17 @@ class JatharaParvritti extends Component {
     }
 
     static defaultProps = {
-        description: "Twist spine",
-        repetition: "4",
-        stay: "4",
-        elementId: 'jathara-parvritti',
+        description: "To stretch the entire back body",
+        repetition: "6",
+        stay : "6",
+        elementId: 'pascimatanasana',
     };
 
     getDefaultChildren() {
         return (
             <div className="asana__details">
-                <p>On exhale lower legs to the side keeping shoulders grounded</p>
-                <p>On inhale bring legs to center</p>
+                <p>On Inhale raise arms  and lengthen spine</p>
+                <p>On exhale fold forward squeezing the lower belly</p>
             </div>
         )
     }
@@ -34,19 +34,19 @@ class JatharaParvritti extends Component {
         const children = this.props.children ? this.props.children : this.getDefaultChildren();
         const {description, repetition, stay, elementId} = this.props;
         return (
-            <div id={elementId} className="asana asana--jathar-parvritti">
-                <h3>Jathara Parvritti</h3>
+            <div id={elementId} className="asana asana--pascimatanasana">
+                <h3>Pascimatanasana</h3>
                 <p>{description}</p>
-                    <div className="row">
+                <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
-                              <img src={SVGPositionA}  alt="Jathara Parvritti start"/>
+                              <img src={SVGPositionA}  alt="Pascimatanasana start"/>
                             </div>
                             <div className="col-sm-1">
                                 <ExIn />
                             </div>
                             <div className="col-sm-4">
-                              <img src={SVGPositionB} alt="Jathara Parvritti end"/>
+                              <img src={SVGPositionB} alt="Pascimatanasana end"/>
                             </div>
                             <div className="col-sm-3">
                                 <Count repetition={repetition} stay={stay} />
@@ -58,4 +58,4 @@ class JatharaParvritti extends Component {
         )
     }
 }
-export default JatharaParvritti;
+export default Pascimatanasana;

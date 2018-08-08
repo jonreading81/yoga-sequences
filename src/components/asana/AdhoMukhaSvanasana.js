@@ -1,11 +1,14 @@
 import React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import SVGPositionA from '../../assets/svg/chakravakasana-a.svg';
-import SVGPositionB from '../../assets/svg/balasana.svg';
+
+import SVGPositionA from '../../assets/svg/balasana.svg';
+import SVGPositionB from '../../assets/svg/chakravakasana-a.svg';
+import SVGPositionC from '../../assets/svg/adho-mukta-svanasana-01.svg';
+import InEx from './breath/InEx';
 import ExIn from './breath/ExIn';
 import Count from './Count';
 
-class Chakravakasana extends Component {
+class AdhoMukhaSvanasana extends Component {
 
     static propTypes = {
         description: PropTypes.string,
@@ -15,9 +18,10 @@ class Chakravakasana extends Component {
     }
 
     static defaultProps = {
-        description: "Warm up and stretch upper and lower back",
+        description: "Strenghen back and shoulders",
         repetition: "6",
-        elementId: 'chakravakasana',
+        stay: "6",
+        elementId: 'adho-mukha-svanasana',
     };
 
     getDefaultChildren() {
@@ -26,8 +30,7 @@ class Chakravakasana extends Component {
                 <p>On Inhale lead with chest keeping neck long,
                     expand chest avoiding compressing lower back
                 </p>
-                <p>On exhale bring chest to thights,
-                    round lower back avoid collapsing upper back
+                <p>On exhale press feet and lift hips, externally rotating arms
                 </p>
             </div>
         )
@@ -37,21 +40,27 @@ class Chakravakasana extends Component {
         const children = this.props.children ? this.props.children : this.getDefaultChildren();
         const {description, repetition, stay, elementId} = this.props;
         return (
-            <div id={elementId} className="asana asana--chakravakasana">
-                <h3>Chakravakasana</h3>
+            <div id={elementId} className="asana asana--adho-mukha-svanasana">
+                <h3>Adho Mukha Svanasana</h3>
                 <p>{description}</p>
                 <div className="row">
                         <div class="asana__instructions">
-                            <div className="col-sm-4">
-                              <img src={SVGPositionA}  alt="Chakravakasana start"/>
+                            <div className="col-sm-3">
+                              <img src={SVGPositionA}  alt="Balasana"/>
+                            </div>
+                            <div className="col-sm-1">
+                                <InEx />
+                            </div>
+                            <div className="col-sm-3">
+                              <img src={SVGPositionB} alt="Chakravakasana"/>
                             </div>
                             <div className="col-sm-1">
                                 <ExIn />
                             </div>
-                            <div className="col-sm-4">
-                              <img src={SVGPositionB} alt="Chakravakasana end"/>
-                            </div>
                             <div className="col-sm-3">
+                              <img src={SVGPositionC} alt="AdhoMukhaSvanasana"/>
+                            </div>
+                            <div className="col-sm-1">
                                 <Count repetition={repetition} stay={stay} />
                             </div>
                         </div>
@@ -61,4 +70,4 @@ class Chakravakasana extends Component {
         )
     }
 }
-export default Chakravakasana;
+export default AdhoMukhaSvanasana;

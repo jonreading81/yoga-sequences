@@ -21,12 +21,6 @@ class App extends Component {
           </Navbar.Header>
           <Nav>
             <NavDropdown eventKey={1} title="Practices" id="basic-nav-dropdown">
-              <LinkContainer to="/neck-and-shoulder-theraphy">
-                  <MenuItem eventKey={1.1}>Neck and Shoulder theraphy</MenuItem>
-              </LinkContainer>
-              <LinkContainer to="/upper-back-and-shoulders">
-                  <MenuItem eventKey={1.2}>Upper back and shoulders</MenuItem>
-              </LinkContainer>
               <LinkContainer to="/amy-07-08-2018">
                   <MenuItem eventKey={1.2}>Amy 07/08/2018</MenuItem>
               </LinkContainer>

@@ -7,7 +7,16 @@ import {
     ScapulaRetraction,
     LateralArmRaises,
     DviPadaPitham,
-    JatharaParvritti
+    JatharaParvritti,
+    AdhoMukhaSvanasana,
+    Plank,
+    Vasisthasana,
+    Dolphin,
+    Bhujangasana,
+    BhujangasanaSacrumAdaption,
+    UrdhvaPrasaritaPadasana,
+    Pascimatanasana,
+
 } from '../asana';
 
 function Amy_07_08_2018(props) {
@@ -17,13 +26,24 @@ function Amy_07_08_2018(props) {
         <h2>Overview</h2>
         <p>Build strength in upper back, shoulders and musculature sorounding sacrum</p>
         <ListGroup className="asana-list">
-            <ListGroupItem href="#vajra">Vajrasana</ListGroupItem>
+            <ListGroupItem href="#vajrasana">Vajrasana</ListGroupItem>
            <ListGroupItem href="#scapula-retraction">Scapula retraction</ListGroupItem>
            <ListGroupItem href="#lateral-arm-raise">Lateral Arm Raised</ListGroupItem>
            <ListGroupItem href="#dvi-pada-pitham">Dvi Pada Pitham</ListGroupItem>
            <ListGroupItem href="#jathara-parvritti">Jathara Parvritti</ListGroupItem>
-           <ListGroupItem href="#chakravakasana">Chakravakasana</ListGroupItem>
            <ListGroupItem href="#thread-the-needle">Thread the needle</ListGroupItem>
+           <ListGroupItem href="#adho-mukha-svanasana">AdhoMukhaSvanasana</ListGroupItem>
+           <ListGroupItem href="#plank">Plank</ListGroupItem>
+           <ListGroupItem href="#plank">Vasisthasana</ListGroupItem>
+           <ListGroupItem href="#dolphin">Dolphin</ListGroupItem>
+           <ListGroupItem href="#bhujangasana">Bhujangasana</ListGroupItem>
+           <ListGroupItem href="#bhujangasana">Bhujangasana Sacrum Adaption</ListGroupItem>
+           <ListGroupItem href="#chakravakasana">Chakravakasana</ListGroupItem>
+           <ListGroupItem href="#urdhva-prasarita-padasana">Urdhva Prasarita Padasana</ListGroupItem>
+           <ListGroupItem href="#pascimatanasana">Pascimatanasana</ListGroupItem>
+
+
+
          </ListGroup>
 
         <h2 className="display-4">Asanas</h2>
@@ -33,8 +53,24 @@ function Amy_07_08_2018(props) {
             <LateralArmRaises />
             <DviPadaPitham />
             <JatharaParvritti />
-            <ThreadTheNeedle repetition= "6/4" />
+            <ThreadTheNeedle/>
+            <AdhoMukhaSvanasana />
+            <Plank />
+            <Vasisthasana />
+            <Dolphin />
+            <Bhujangasana description="To strengthen musculature around sacrum" stay={false}>
+                <p>On Inhale pull back with hands and lift chest keeping head inline with spine
+                </p>
+                <p>On exhale lower back down</p>
+                <p>First 2 repetitions feet together</p>
+                <p>Second 2 repetitions feet hip wifth apart</p>
+                <p>Final 2 repetitions feet wide apart</p>
+            </Bhujangasana>
+            <BhujangasanaSacrumAdaption />
             <Chakravakasana/>
+            <UrdhvaPrasaritaPadasana />
+            <Pascimatanasana />
+
 
         </section>
     </div>
