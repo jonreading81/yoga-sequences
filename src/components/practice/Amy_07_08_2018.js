@@ -16,6 +16,7 @@ import {
     BhujangasanaSacrumAdaption,
     UrdhvaPrasaritaPadasana,
     Pascimatanasana,
+    EkaPadaUstrasana,
 
 } from '../asana';
 
@@ -29,6 +30,7 @@ function Amy_07_08_2018(props) {
             <ListGroupItem href="#vajrasana">Vajrasana</ListGroupItem>
            <ListGroupItem href="#scapula-retraction">Scapula retraction</ListGroupItem>
            <ListGroupItem href="#lateral-arm-raise">Lateral Arm Raised</ListGroupItem>
+           <ListGroupItem href="#eka-pada-ustrasana">Eka Pada Ustrasana</ListGroupItem>
            <ListGroupItem href="#dvi-pada-pitham">Dvi Pada Pitham</ListGroupItem>
            <ListGroupItem href="#jathara-parvritti">Jathara Parvritti</ListGroupItem>
            <ListGroupItem href="#thread-the-needle">Thread the needle</ListGroupItem>
@@ -51,6 +53,7 @@ function Amy_07_08_2018(props) {
             <Vajrasana  description="To warm up body, mobilising shoulders, arms and providing in internal and external rotation of humorous" repetition={8} />
             <ScapulaRetraction />
             <LateralArmRaises />
+            <EkaPadaUstrasana />
             <DviPadaPitham />
             <JatharaParvritti />
             <ThreadTheNeedle/>
@@ -70,8 +73,6 @@ function Amy_07_08_2018(props) {
             <Chakravakasana/>
             <UrdhvaPrasaritaPadasana />
             <Pascimatanasana />
-
-
         </section>
     </div>
     );

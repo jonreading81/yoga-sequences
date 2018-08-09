@@ -41,7 +41,7 @@ class AdhoMukhaSvanasana extends Component {
         const {description, repetition, stay, elementId} = this.props;
         return (
             <div id={elementId} className="asana asana--adho-mukha-svanasana">
-                <h3>Adho Mukha Svanasana</h3>
+                <h3>Eka Pada Ustrasana</h3>
                 <p>{description}</p>
                 <div className="row">
                         <div class="asana__instructions">

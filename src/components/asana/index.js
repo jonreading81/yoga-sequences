@@ -13,6 +13,7 @@ import Bhujangasana from './Bhujangasana';
 import BhujangasanaSacrumAdaption from './BhujangasanaSacrumAdaption';
 import UrdhvaPrasaritaPadasana from './UrdhvaPrasaritaPadasana';
 import Pascimatanasana from './Pascimatanasana';
+import EkaPadaUstrasana from './EkaPadaUstrasana';
 
 export {
     Vajrasana,
@@ -30,4 +31,5 @@ export {
     BhujangasanaSacrumAdaption,
     UrdhvaPrasaritaPadasana,
     Pascimatanasana,
+    EkaPadaUstrasana,
 }

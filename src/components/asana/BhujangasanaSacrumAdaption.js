@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import SVGPositionA from '../../assets/svg/bhujangasana-01.svg';
 import SVGPositionB from '../../assets/svg/bhujangasana-sacrum-a-01.svg';
 import SVGPositionC from '../../assets/svg/bhujangasana-sacrum-b-01.svg';
-import InEx from './breath/InEx';
-import ExIn from './breath/ExIn';
+import In from './breath/In';
+import Ex from './breath/Ex';
+import ExBack from './breath/ExBack';
 import Count from './Count';
 
 class BhujangasanaSacrumAdaption extends Component {
@@ -44,34 +45,30 @@ class BhujangasanaSacrumAdaption extends Component {
                 <p>{description}</p>
                 <div className="row">
                         <div class="asana__instructions">
-                            <div className="col-sm-3">
+                            <div className="col-sm-2">
                               <img src={SVGPositionA} alt="Bhujangasana start"/>
                             </div>
                             <div className="col-sm-1">
-                                <InEx />
+                                <In />
                             </div>
-                            <div className="col-sm-3">
+                            <div className="col-sm-2">
                               <img src={SVGPositionB} alt="Bhujangasana"/>
                             </div>
                             <div className="col-sm-1">
-                                <ExIn />
+                                <Ex />
                             </div>
-                            <div className="col-sm-3">
+                            <div className="col-sm-2">
                               <img src={SVGPositionC} alt="Bhujangasana"/>
                             </div>
                             <div className="col-sm-1">
-                                <InEx />
-                            </div>
-                            <div className="col-sm-4">
-                              <img src={SVGPositionB} alt="Bhujangasana"/>
+                                <In />
                             </div>
                             <div className="col-sm-2">
-                                <ExIn />
+                              <img src={SVGPositionB} alt="Bhujangasana"/>
                             </div>
-                            <div className="col-sm-4">
-                              <img src={SVGPositionA} alt="Bhujangasana"/>
-                            </div>
-
+                        </div>
+                        <div className="col-sm-12">
+                            <ExBack />
                         </div>
                         <div className="col-sm-2">
                             <Count repetition={repetition} stay={stay} />
