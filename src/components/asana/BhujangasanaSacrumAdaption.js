@@ -6,7 +6,6 @@ import SVGPositionB from '../../assets/svg/bhujangasana-sacrum-a-01.svg';
 import SVGPositionC from '../../assets/svg/bhujangasana-sacrum-b-01.svg';
 import In from './breath/In';
 import Ex from './breath/Ex';
-import ExBack from './breath/ExBack';
 import Count from './Count';
 
 class BhujangasanaSacrumAdaption extends Component {
@@ -66,9 +65,6 @@ class BhujangasanaSacrumAdaption extends Component {
                             <div className="col-sm-2">
                               <img src={SVGPositionB} alt="Bhujangasana"/>
                             </div>
-                        </div>
-                        <div className="col-sm-12">
-                            <ExBack />
                         </div>
                         <div className="col-sm-2">
                             <Count repetition={repetition} stay={stay} />

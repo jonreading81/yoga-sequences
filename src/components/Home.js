@@ -1,6 +1,6 @@
 import React from 'react';
 
 function home(props) {
-    return <div>Home</div>
+    return <div>Welcome</div>
 }
 export default home;

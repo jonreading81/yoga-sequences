@@ -14,6 +14,12 @@ import BhujangasanaSacrumAdaption from './BhujangasanaSacrumAdaption';
 import UrdhvaPrasaritaPadasana from './UrdhvaPrasaritaPadasana';
 import Pascimatanasana from './Pascimatanasana';
 import EkaPadaUstrasana from './EkaPadaUstrasana';
+import SacrumRocking from './SacrumRocking';
+import Tadasana from './Tadasana';
+import Warrior_2 from './Warrior_2';
+import Warrior_1 from './Warrior_1';
+import ThoracicRotation from './ThoracicRotation';
+import SupineThoracicRotation from './SupineThoracicRotation';
 
 export {
     Vajrasana,
@@ -32,4 +38,10 @@ export {
     UrdhvaPrasaritaPadasana,
     Pascimatanasana,
     EkaPadaUstrasana,
+    SacrumRocking,
+    Tadasana,
+    Warrior_2,
+    Warrior_1,
+    ThoracicRotation,
+    SupineThoracicRotation,
 }

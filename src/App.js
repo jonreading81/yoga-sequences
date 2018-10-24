@@ -5,6 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import NeckAndShoulderTheraphy from './components/NeckAndShoulderTheraphy';
 import UpperBackAndShoulders from './components/practice/UpperBackAndShoulders';
 import Amy_07_08_2018 from './components/practice/Amy_07_08_2018';
+import Mike_10_2018 from './components/practice/Mike_10_2018';
 import Home from './components/Home';
 import './App.css';
 
@@ -20,11 +21,6 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
-            <NavDropdown eventKey={1} title="Practices" id="basic-nav-dropdown">
-              <LinkContainer to="/amy-07-08-2018">
-                  <MenuItem eventKey={1.2}>Amy 07/08/2018</MenuItem>
-              </LinkContainer>
-            </NavDropdown>
           </Nav>
         </Navbar>
           <div className="container">
@@ -32,6 +28,7 @@ class App extends Component {
               <Route path="/neck-and-shoulder-theraphy" component={NeckAndShoulderTheraphy} />
               <Route path="/upper-back-and-shoulders" component={ UpperBackAndShoulders} />
                <Route path="/amy-07-08-2018" component={ Amy_07_08_2018 } />
+               <Route path="/mike-10-2018" component={ Mike_10_2018 } />
           </div>
       </div>
     </Router>

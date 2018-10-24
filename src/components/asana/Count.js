@@ -1,8 +1,8 @@
 import React from 'react';
 
 function Count(props) {
-    const repetition = props.repetition ? `R ${props.repetition}` : '';
-    const stay = props.stay ? `S ${props.stay}` : '';
+    const repetition = props.repetition ? `Repeat: ${props.repetition}` : '';
+    const stay = props.stay ? `Stay: ${props.stay}` : '';
 
     return (
         <div>

@@ -24,8 +24,9 @@ function Amy_07_08_2018(props) {
     return (
     <div>
         <h1>Amy 07/08/2018</h1>
-        <h2>Overview</h2>
-        <p>Build strength in upper back, shoulders and musculature sorounding sacrum</p>
+        <h2 className="section-heading">Overview</h2>
+        <p className="overview">Build strength in upper back, shoulders and musculature sorounding sacrum</p>
+        <h2 className="section-heading">Asanas</h2>
         <ListGroup className="asana-list">
             <ListGroupItem href="#vajrasana">Vajrasana</ListGroupItem>
            <ListGroupItem href="#scapula-retraction">Scapula retraction</ListGroupItem>
@@ -43,12 +44,7 @@ function Amy_07_08_2018(props) {
            <ListGroupItem href="#chakravakasana">Chakravakasana</ListGroupItem>
            <ListGroupItem href="#urdhva-prasarita-padasana">Urdhva Prasarita Padasana</ListGroupItem>
            <ListGroupItem href="#pascimatanasana">Pascimatanasana</ListGroupItem>
-
-
-
          </ListGroup>
-
-        <h2 className="display-4">Asanas</h2>
         <section className="page-section__content">
             <Vajrasana  description="To warm up body, mobilising shoulders, arms and providing in internal and external rotation of humorous" repetition={8} />
             <ScapulaRetraction />

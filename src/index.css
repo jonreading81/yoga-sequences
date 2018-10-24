@@ -4,6 +4,10 @@ body {
   font-family: sans-serif;
 }
 
+.asana-list, p.overview, h2.section-heading{
+  margin-top:2em;
+}
+
 .asana__breath, .asana__breath--full, .asana__count {
     font-size:1.6em;
 }
