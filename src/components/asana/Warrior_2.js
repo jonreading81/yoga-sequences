@@ -1,6 +1,6 @@
 import React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import SVGPositionA from '../../assets/svg/dvi-pada-pitham-a-01.svg';
+import imageA from '../../assets/images/warrior-2.jpg';
 import Count from './Count';
 
 class Warrior_2 extends Component {
@@ -40,10 +40,10 @@ class Warrior_2 extends Component {
                 <p>{description}</p>
                     <div className="row">
                         <div class="asana__instructions">
-                            <div className="col-sm-9">
-                              <img src={SVGPositionA}  alt="Warrior 2"/>
+                            <div className="col-sm-6">
+                              <img className="asana__image" {...imageA}  alt="Warrior 2"/>
                             </div>
-                            <div className="col-sm-3">
+                            <div className="col-sm-6 asana__instructions__details">
                                 <Count stay={stay} />
                             </div>
                         </div>

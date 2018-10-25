@@ -17,7 +17,7 @@ function Mike_10_2018(props) {
     <div>
         <h1>Mike October 2018</h1>
         <h2 className="section-heading">Overview</h2>
-        <p className="overview">Create balance in hips and open thoracic spine</p>
+        <p className="overview">Create balance in the hips and open thoracic spine.</p>
         <h2 className="section-heading">Asanas</h2>
         <ListGroup className="asana-list">
             <ListGroupItem href="#vajrasana">Vajrasana</ListGroupItem>

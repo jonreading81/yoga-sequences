@@ -16,7 +16,6 @@ body {
     text-align: center;
 }
 
-
 .asana {
     margin-top: 4em;
     position: relative;
@@ -28,6 +27,29 @@ body {
 }
 .asana__image {
   width:100%;
+  height:auto;
+}
+
+.asana__details, .asana__instructions{
+  margin-top: 2em;
+}
+
+.asana__instructions__details {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .asana__instructions{
+      display: flex;
+  }
+  .asana__instructions__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .glyphicon.asana__breath__icon{

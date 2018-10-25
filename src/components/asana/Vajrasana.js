@@ -39,15 +39,15 @@ class Vajrasana extends Component {
                     <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
-                              <img className="asana__image" src={imageA}  alt="Vajrasana start"/>
+                              <img className="asana__image" {...imageA}  alt="Vajrasana start"/>
                             </div>
-                            <div className="col-sm-1">
+                            <div className="col-sm-1 asana__instructions__details">
                                 <ExIn />
                             </div>
                             <div className="col-sm-4">
-                              <img className="asana__image" src={imageB} alt="Vajrasana end"/>
+                              <img className="asana__image" {...imageB} alt="Vajrasana end"/>
                             </div>
-                            <div className="col-sm-3">
+                            <div className="col-sm-3 asana__instructions__details">
                                 <Count repetition={repetition} stay={stay} />
                             </div>
                         </div>

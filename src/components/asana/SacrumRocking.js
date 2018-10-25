@@ -1,6 +1,6 @@
 import React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import SVGPositionA from '../../assets/svg/dvi-pada-pitham-a-01.svg';
+import imageA from '../../assets/images/sacrum-rocking.jpg';
 import Count from './Count';
 
 class SacrumRocking extends Component {
@@ -41,10 +41,10 @@ class SacrumRocking extends Component {
                 <p>{description}</p>
                     <div className="row">
                         <div class="asana__instructions">
-                            <div className="col-sm-9">
-                              <img src={SVGPositionA}  alt="Sacrum rocking"/>
+                            <div className="col-sm-6">
+                              <img className="asana__image" {...imageA}  alt="Sacrum rocking"/>
                             </div>
-                            <div className="col-sm-3">
+                            <div className="col-sm-6 asana__instructions__details">
                                 <Count repetition={repetition} />
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 import React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import SVGPositionA from '../../assets/svg/chakravakasana-a.svg';
-import SVGPositionB from '../../assets/svg/balasana.svg';
+import imageA from '../../assets/images/cakravakasana-a.jpg';
+import imageB from '../../assets/images/cakravakasana-b.jpg';
 import ExIn from './breath/ExIn';
 import Count from './Count';
 
@@ -43,15 +43,15 @@ class Chakravakasana extends Component {
                 <div className="row">
                         <div class="asana__instructions">
                             <div className="col-sm-4">
-                              <img src={SVGPositionA}  alt="Chakravakasana start"/>
+                              <img  className="asana__image" {...imageA} alt="Chakravakasana start"/>
                             </div>
-                            <div className="col-sm-1">
+                            <div className="col-sm-1 asana__instructions__details">
                                 <ExIn />
                             </div>
                             <div className="col-sm-4">
-                              <img src={SVGPositionB} alt="Chakravakasana end"/>
+                              <img className="asana__image" {...imageB} alt="Chakravakasana end"/>
                             </div>
-                            <div className="col-sm-3">
+                            <div className="col-sm-3 asana__instructions__details">
                                 <Count repetition={repetition} stay={stay} />
                             </div>
                         </div>
