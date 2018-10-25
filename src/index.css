@@ -26,6 +26,9 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+.asana__image {
+  width:100%;
+}
 
 .glyphicon.asana__breath__icon{
     display: block;
